@@ -1,0 +1,53 @@
+/// <reference types="cypress" />
+
+
+it('Automation Test', ()=>{
+
+cy.visit('http://automationexercise.com')
+
+cy.get('.features_items > :nth-child(3) > .product-image-wrapper > .single-products > .productinfo > .btn').click()
+
+cy.get(':nth-child(4) > .product-image-wrapper > .single-products > .productinfo > .btn').click()
+cy.get('.modal-footer > .btn').click()
+cy.get('#cartModal').click({force: true})
+cy.get('.shop-menu > .nav > :nth-child(3) > a').click({force: true})
+cy.get('.col-sm-6 > .btn').click({force: true})
+cy.get('.modal-body > :nth-child(2)').click()
+cy.get('[data-qa="signup-name"]').type('samira')
+cy.get('[data-qa="signup-email"]').type('samiranahar123@gmail.com{Enter}')
+cy.get('.clearfix > :nth-child(4)').click()
+cy.get('[data-qa="password"]').type('samira123')
+cy.get('[data-qa="days"]').select('18')
+cy.get('[data-qa="months"]').select('11')
+cy.get('[data-qa="years"]').select('1993')
+cy.get('#newsletter').click()
+cy.get('#optin').click()
+cy.get('form > :nth-child(11)').type('Samira')
+cy.get('[data-qa="last_name"]').type('Nahar')
+cy.get('[data-qa="company"]').type('Kinetic')
+cy.get('[data-qa="address"]').type('Toronto,Canada')
+cy.get('[data-qa="address2"]').type('1234')
+cy.get('[data-qa="country"]').select('Canada')
+cy.get('[data-qa="state"]').type('Ontario')
+cy.get('[data-qa="city"]').type('Toronto')
+cy.get('[data-qa="zipcode"]').type('1234')
+cy.get('[data-qa="mobile_number"]').type('+12505550199')
+cy.get('[data-qa="create-account"]').click()
+cy.get('[data-qa="continue-button"]').click()
+cy.get(':nth-child(10) > a')
+cy.get('.shop-menu > .nav > :nth-child(3) > a').click()
+cy.get('.col-sm-6 > .btn').click({force: true})
+cy.get('#address_delivery').click()
+cy.get('#address_invoice').click()
+cy.get(':nth-child(4) > .heading').click()
+cy.get('.form-control').type('Confirm Order')
+cy.get(':nth-child(7) > .btn').click({force: true})
+cy.get('[data-qa="name-on-card"]').type('samira')
+cy.get('[data-qa="card-number"]').type('1234567890000')
+cy.get('[data-qa="cvc"]').type('123')
+cy.get('[data-qa="expiry-month"]').type('11')
+cy.get('[data-qa="expiry-year"]').type('2027')
+cy.get('[data-qa="pay-button"]').click({force: true})
+
+
+})
