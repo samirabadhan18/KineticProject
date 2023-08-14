@@ -7,10 +7,10 @@
 
 4.In the Terminal window, run the following commands. 
 
-5  npm install cypress (cypress will be instlled;check by clicking on package .json file)
+5  npm install cypress (cypress will be installed;check by clicking on package .json file)
 
 6. npx cypress -v (to verify Cypress version)
-   
+
 7. npx cypress verify (to verify Cypress)
    
 8. npx cypress open  (will run the script)
